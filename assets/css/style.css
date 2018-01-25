@@ -1,18 +1,24 @@
-.container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
 }
 
 body {
+	position: relative;
+	background: url("../images/gaming-pattern.png");
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	margin:0;
 	padding:0;
+	height: 100%;
 }
+
 
 header {
 	position: fixed;
-	height: 100px;
+	height: 75px;
 	width: 100%;
 	border-bottom: solid #ccc 1px;
 	background:#fff;
@@ -20,19 +26,19 @@ header {
 
 h1 {
 	margin-top: 0;
-	line-height:100px;
+	line-height:76px;
 	width:260px;
-	margin-left:100px;
+	margin-left:250px;
 	background:#4aaaa5;
 	color:#fff;
-	font-family: sans-serif;
+	font-size: 18px;
 	text-align: center;
 }
 
 ul { 
 	position: absolute;
-	top: 20px;
-	left:960px;
+	top: 30px;
+	left:945px;
  }
 
 li {
@@ -40,9 +46,17 @@ li {
 	border-right: 1px solid lightgrey;
 }
 
+.container {
+    width: 100%;
+	height: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
 a {
 	font-family: Helvetica;
-	font-size: 17px;
+	font-size: 16px;
 	color:#999;
 	text-align: center;
 	padding: 12px;
@@ -55,6 +69,11 @@ section {
 	padding: 30px 30px 30px 30px;
 	background: #fff;
 	color:#777;
+	line-height: 20px;
+}
+
+p {
+	margin-bottom: 10px;
 }
 
 .img-circle {
@@ -66,12 +85,12 @@ section {
 .About {
 	border: solid #ddd 1px;
 	width: 650px;
-	margin-left:100px;
-}
+	margin-left: -30px;
+	}
 
 h2 {
 	padding-bottom: 20px;
-	margin-top: 0px;
+	margin-bottom: 20px;
 	color:#4aaaa5;
 	border-bottom: solid lightgrey 3px;
 }
@@ -83,7 +102,7 @@ h2#Me {
 .Sidebar {
 	border: solid #ddd 1px;
 	width: 270px;
-	margin-left: 170px;
+	margin-left: 50px;
 }
 
 h2#ConLinks {
@@ -102,10 +121,10 @@ a.Icons{
 }
 
 .Footer {
-	position: fixed;
+	/*position: fixed;*/
 	bottom: 0;
 	border-top: solid #4aaaa5 5px;
-	height:100px;
+	height:75px;
 	width:100%;
 	background-color:#666;
 	clear:both;
@@ -115,8 +134,7 @@ p#FooterText {
 	font-size: 12px;
 	color:#c1c1c1;
 	text-align: center;
-	line-height:105px;
-	margin: 0;
+	margin-top: 30px;
 }
 
 /* contact */
@@ -124,9 +142,8 @@ p#FooterText {
 .Contact {
 	width: 650px;
 	border: 1px solid #ccc;
-	margin-left: 100px;
-	overflow: auto;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
+	margin-left: -30px;
 }
 
 
@@ -139,4 +156,13 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+}
+
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0 none;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 30px;
+	cursor: pointer;
 }
